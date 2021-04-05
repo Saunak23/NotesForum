@@ -85,7 +85,8 @@ A nested **DiffUtil.ItemCallback** class part of the **WordListAdapter**.
 
 The **ViewHolder** that will display each word in our list.
 
-Here, is what we got after the code:-
+Here, is what we got after Implementation![Screenshot (85)](https://user-images.githubusercontent.com/71092350/113600874-41cd5500-965e-11eb-9541-df954deef00a.png)
+:-
 
 The **WordViewHolder** class, that allows us to bind a text to a **TextView**. The class exposes a static **create()** function that handles inflating the layout.
 
