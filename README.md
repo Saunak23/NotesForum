@@ -3,6 +3,9 @@ A handy and feasible Note App which stores Notes for quick Revision during Exami
 
 <h2> Architectural Components </h2>
 
+![Screenshot (85)](https://user-images.githubusercontent.com/71092350/113601031-75a87a80-965e-11eb-97e0-fef92c65dca6.png)
+
+
 <h3> Entity:- </h3> Annotated class that describes a database table when working with Room.
 
 **@Entity(tableName = "word_table"):-** Each @Entity class represents a SQLite table. Annotate your class declaration to indicate that it's an entity. You can specify the name of the table if you want it to be different from the name of the class. This names the table "word_table".
@@ -85,8 +88,7 @@ A nested **DiffUtil.ItemCallback** class part of the **WordListAdapter**.
 
 The **ViewHolder** that will display each word in our list.
 
-Here, is what we got after Implementation![Screenshot (85)](https://user-images.githubusercontent.com/71092350/113600874-41cd5500-965e-11eb-9541-df954deef00a.png)
-:-
+Here, is what we got after Implementation:-
 
 The **WordViewHolder** class, that allows us to bind a text to a **TextView**. The class exposes a static **create()** function that handles inflating the layout.
 
