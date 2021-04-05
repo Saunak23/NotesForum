@@ -77,7 +77,20 @@ To create the ViewModel we implement a **ViewModelProvider.Factory** that gets a
 By using **viewModels** and **ViewModelProvider.Factory** then the framework will take care of the lifecycle of the ViewModel. It will survive configuration changes and even if the Activity is recreated, you'll always get the right instance of the **WordViewModel** class.
 
 <h3> Adding Recycle View </h3>
+We need to create:
 
+The **WordListAdapter** class that extends **ListAdapter**.
+
+A nested **DiffUtil.ItemCallback** class part of the **WordListAdapter**.
+
+The **ViewHolder** that will display each word in our list.
+
+Here, is what we got after the code:-
+The **WordViewHolder** class, that allows us to bind a text to a **TextView**. The class exposes a static **create()** function that handles inflating the layout.
+
+The **WordsComparator** defines how to compute if two words are the same or if the contents are the same.
+
+The **WordListAdapter** creates the **WordViewHolder** in **onCreateViewHolder** and binds it in **onBindViewHolder**.
 
 
 
